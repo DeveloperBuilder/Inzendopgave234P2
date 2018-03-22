@@ -11,39 +11,44 @@ namespace Inzendopgave234P2
     Het arrayobject, bevat objecten van het type Product.
     De class product heeft de string naam en de int aantal als attributen. Maak de class product abstract.
     Maak van product twee subclasses, namelijk Kruidenierswaren en Verswaren. Laat in een demo-applicatie zien dat er Kruidenierswaren en Verswaren in de boodschappenlijst geplaatst kunnen worden. */
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             Boodschappenlijst boodschappenlijst = new Boodschappenlijst();
+            Console.ReadKey();
         }
     }
 
-    class Boodschappenlijst : Kruidenierswaren, KratBier
+    public class Boodschappenlijst
     {
-        string[] Product = { Gebak };
-    }
-
-    abstract class Product
-    {
-        string naam = "taart";
-        int aantal = 24;
-
-    }
-
-    class Kruidenierswaren : Product
-    {
-        public static void Gebak(string naam)
+        public void Producten(Kruidenierswaren first, Verswaren second)
         {
-            Console.WriteLine($"De {naam} is erg lekker");
+            Product[] Producten;
         }
     }
 
-    class Verswaren : Product
+    public abstract class Product
     {
-        public static void KratBier(int aantal)
+        string naam;
+        int aantal;
+    }
+
+    public class Kruidenierswaren : Product
+    {
+        public Kruidenierswaren(string naam, int aantal)
         {
-            Console.WriteLine($"In de krat zitten er {aantal} flessen bier");
+            string Naam = naam;
+            int Aantal = aantal;
+        }
+    }
+
+    public class Verswaren : Product
+    {
+        public Verswaren(string naam, int aantal)
+        {
+            string Naam = naam;
+            int Aantal = aantal;
         }
     }
 }
