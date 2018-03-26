@@ -16,6 +16,7 @@ namespace Inzendopgave234P2
         public static void Main(string[] args)
         {
             Boodschappenlijst boodschappenlijst = new Boodschappenlijst();
+            boodschappenlijst.Producten();
             Console.ReadKey();
         }
     }
