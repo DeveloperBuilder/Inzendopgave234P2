@@ -15,32 +15,40 @@ namespace Inzendopgave234P2
     {
         public static void Main(string[] args)
         {
-            Boodschappenlijst boodschappenlijst = new Boodschappenlijst();
-            boodschappenlijst.Producten();
             Console.ReadKey();
         }
     }
 
     public class Boodschappenlijst
     {
-        public void Producten(Kruidenierswaren first, Verswaren second)
+        List<Kruidenierswaren, Verswaren> Product;
+
+        public Boodschappenlijst(Product product)
         {
-            Product[] Producten;
+            Product = Product;
+        }
+        public void ProductenToevoegen()
+        {
+            Product.Add(Product);
+        }
+        public void ProductenVerwijderen()
+        {
+            Product.Remove(Product);
         }
     }
 
     public abstract class Product
     {
-        string naam;
-        int aantal;
+        public string Naam;
+        public int Aantal;
     }
 
     public class Kruidenierswaren : Product
     {
         public Kruidenierswaren(string naam, int aantal)
         {
-            string Naam = naam;
-            int Aantal = aantal;
+            Naam = naam;
+            Aantal = aantal;
         }
     }
 
@@ -48,8 +56,8 @@ namespace Inzendopgave234P2
     {
         public Verswaren(string naam, int aantal)
         {
-            string Naam = naam;
-            int Aantal = aantal;
+            Naam = naam;
+            Aantal = aantal;
         }
     }
 }
