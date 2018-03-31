@@ -21,20 +21,19 @@ namespace Inzendopgave234P2
 
     public class Boodschappenlijst
     {
-        private Product product;
-        public List<Product> Producten;
+        public List<> Product;
 
-        public Boodschappenlijst()
+        public Boodschappenlijst
         {
-            public Product = producten;
+            public Product = Producten;
         }
         public void ProductToevoegen(Product product)
         {
-            Product.Add(product);
+            Producten.Add(product);
         }
         public void ProductVerwijderen(Product product)
         {
-            Product.Remove(product);
+            Producten.Remove(product);
         }
     }
 
