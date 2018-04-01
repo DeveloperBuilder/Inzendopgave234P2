@@ -21,11 +21,13 @@ namespace Inzendopgave234P2
 
     public class Boodschappenlijst
     {
-        public List<> Product;
+        private Kruidenierswaren Producten;
+        private Verswaren Producten;
+        public List<> Producten;
 
         public Boodschappenlijst
         {
-            public Product = Producten;
+            public Product Producten;
         }
         public void ProductToevoegen(Product product)
         {
