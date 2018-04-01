@@ -21,7 +21,7 @@ namespace Inzendopgave234P2
 
     public class Boodschappenlijst
     {
-        public Product Producten;
+        public Product<> Producten;
 
         public Boodschappenlijst(string Naam, int Aantal)
         {
