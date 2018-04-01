@@ -25,6 +25,7 @@ namespace Inzendopgave234P2
 
         public Boodschappenlijst(string Naam, int Aantal)
         {
+            Producten = Product;
         }
         public void ProductToevoegen(Product product)
         {
