@@ -15,26 +15,28 @@ namespace Inzendopgave234P2
     {
         public static void Main(string[] args)
         {
+            Boodschappenlijst boodschappenlijst = new Boodschappenlijst();
+            boodschappenlijst.ProductToevoegen();
+            boodschappenlijst.ProductVerwijderen();
             Console.ReadKey();
         }
     }
 
     public class Boodschappenlijst
     {
-        public product Kruidenierswaren;
-        public List<Producten> product;
+        public List<Product> producten;
 
-        public Boodschappenlijst(Producten product)
+        public Boodschappenlijst()
         {
-            Producten = product;
+           
         }
         public void ProductToevoegen(Product product)
         {
-            Producten.Add(product);
+            producten.Add(product);
         }
         public void ProductVerwijderen(Product product)
         {
-            Producten.Remove(product);
+            producten.Remove(product);
         }
     }
 
